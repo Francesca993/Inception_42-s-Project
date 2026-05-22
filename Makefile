@@ -6,14 +6,14 @@
 #    By: francesca <francesca@student.42.fr>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/04/23 12:39:22 by francesca         #+#    #+#              #
-#    Updated: 2026/04/23 12:39:25 by francesca        ###   ########.fr        #
+#    Updated: 2026/05/22 08:14:48 by francesca        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME        = inception
 COMPOSE     = docker compose -f srcs/docker-compose.yml
 
-LOGIN       = fmontini
+LOGIN       = $USER
 DATA_DIR    = /home/$(LOGIN)/data
 
 .PHONY: all up down start stop restart build re clean fclean logs ps \
